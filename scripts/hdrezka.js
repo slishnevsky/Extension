@@ -12,7 +12,7 @@ elements.forEach(async element => {
   const description = element.querySelector('div.b-content__inline_item-link > div');
 
   // Check if the description element includes any string from the array
-  const filter = ['Китай', 'Корея Южная', 'Италия', 'Япония', 'Польша', 'Чехия', 'Франция', 'Германия', 'Индия', 'Таиланд', 'Комедии', 'Мелодрамы', 'Документальные', 'Стендап', 'Реальное ТВ', 'Дания', 'ЮАР'];
+  const filter = ['Китай', 'Турция', 'Корея Южная', 'Италия', 'Япония', 'Польша', 'Чехия', 'Франция', 'Германия', 'Индия', 'Таиланд', 'Комедии', 'Мелодрамы', 'Документальные', 'Стендап', 'Реальное ТВ', 'Дания', 'ЮАР'];
   const garbage = filter.some(substring => description.textContent.includes(substring));
 
   if (cartoons || garbage)

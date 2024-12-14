@@ -17,15 +17,19 @@
     "service_worker": "background.js",
     "type": "module"
   },
-  "permissions": ["alarms", "notifications", "storage"],
+  "permissions": ["alarms", "notifications", "storage", "tabs"],
   "content_scripts": [
     {
-      "js": ["scripts/hdrezka-filter.js"],
+      "js": ["scripts/hdrezka.js"],
       "matches": ["https://hdrezka.ag/*"]
     },
     {
-      "js": ["scripts/age-verification.js"],
-      "matches": ["https://shopelfbar.ca/*"]
+      "js": ["scripts/youtube.js"],
+      "matches": ["https://www.youtube.com/*"]
+    },
+    {
+      "js": ["scripts/adult.js"],
+      "matches": ["https://canadavapes.com/*", "https://www.majesticvapes.ca/*"]
     }
   ]
 }
